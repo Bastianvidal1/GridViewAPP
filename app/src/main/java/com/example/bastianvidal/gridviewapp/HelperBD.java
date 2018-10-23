@@ -7,11 +7,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class HelperBD extends SQLiteOpenHelper {
     private static final String SQL_CREATE_ENTRIES =
-            "create table productos (" +
+            "create table sistema (" +
                     "id integer PRIMARY KEY," +
                     "nombre TEXT," +
+                    "radio TEXT," +
+                    "edad integer," +
                     "descripcion TEXT," +
-                    "precio integer," +
+                    "distancia_sol integer," +
                     "nombre_img TEXT)";
 
     public HelperBD(Context context) {

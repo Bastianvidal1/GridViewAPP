@@ -2,10 +2,7 @@ package com.example.bastianvidal.gridviewapp;
 
 import android.content.ContentValues;
 import android.content.Intent;
-import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
-import android.os.strictmode.SqliteObjectLeakedViolation;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void verInventario(View view){
-        Intent intent = new Intent(this,Inventario.class);
+        Intent intent = new Intent(this,Galeria.class);
         startActivity(intent);
     }
 
@@ -35,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         HelperBD helperBD = new HelperBD(this);
         SQLiteDatabase db = helperBD.getWritableDatabase();
         try {
-
 
             ContentValues values = new ContentValues();
             values.put("nombre", edtnombre.getText().toString());

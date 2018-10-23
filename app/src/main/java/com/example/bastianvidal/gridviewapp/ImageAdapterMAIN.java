@@ -1,6 +1,5 @@
 package com.example.bastianvidal.gridviewapp;
 
-import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -8,17 +7,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class ImageAdapter extends BaseAdapter {
+public class ImageAdapterMAIN extends BaseAdapter {
     private Context mContext;
     private ArrayList<Integer> arrayImg = new ArrayList<Integer>();
     int[] array;
 
 
-    public ImageAdapter(Context c) {
+    public ImageAdapterMAIN(Context c) {
         mContext = c;
         definirImagenes();
     }

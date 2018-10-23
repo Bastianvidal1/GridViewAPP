@@ -7,7 +7,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
-public class Inventario extends AppCompatActivity {
+public class Galeria extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class Inventario extends AppCompatActivity {
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
-                Toast.makeText(Inventario.this, "" + position,Toast.LENGTH_LONG).show();
+                Toast.makeText(Galeria.this, "" + position,Toast.LENGTH_LONG).show();
             }
         });
     }
